@@ -1,0 +1,17 @@
+@mixin body {
+    font: {
+        family: "Montserrat-Medium";
+        style: normal;
+        size: 12px;
+    }
+    line-height: 16px;
+}
+
+@mixin h2 {
+    font: {
+        family: "Montserrat-Bold";
+        size: 38px;
+        style: normal;
+    }
+    line-height: 40px;
+}
