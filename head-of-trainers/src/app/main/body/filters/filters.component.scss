@@ -1,0 +1,33 @@
+@import '../../../app.component.scss';
+.filters {
+    display: flex;
+    width: 100%;
+    height: 110px;
+    &__inputs {
+        width: 754px;
+        height: 66px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        &_item {
+            display: flex;
+            & mat-form-field {
+                width: 166px;
+                height: 66px;
+                padding: 0;
+                & mat-label {
+                    @include body;
+                    font-size: 10px;
+                    line-height: 12px;
+                    color: $color-lightTheme_Secondary;
+                }
+                & input,
+                & mat-select {
+                    @include body;
+                    color: $color-lightTheme_Primary;
+                }
+            }
+        }
+    }
+}

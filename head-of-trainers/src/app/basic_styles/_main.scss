@@ -9,3 +9,16 @@ button {
     background: none;
     cursor: pointer;
 }
+
+::ng-deep .mat-select-arrow {
+    border-left: 15px solid transparent !important;
+    border-right: none !important;
+    border-top: 15px solid transparent !important;
+    border-image-source: url('../../assets/icons/keyboard_arrow_down_black_24dp.svg') !important;
+    border-image-repeat: stretch !important;
+}
+
+.search-icon {
+    position: absolute;
+    // left: 100px;
+}

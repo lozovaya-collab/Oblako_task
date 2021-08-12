@@ -1,1 +1,44 @@
-<p>filters works!</p>
+<section class="filters">
+    <form action="#" class="filters__inputs">
+        <div class="filters__inputs_item">
+            <mat-form-field class="input_filter example-full-width">
+                <mat-icon class="search-icon">search</mat-icon>
+                <input matInput placeholder="Поиск">
+            </mat-form-field>
+
+        </div>
+        <div class="filters__inputs_item">
+            <mat-form-field>
+                <mat-label>Программа</mat-label>
+                <mat-select [formControl]="programControl">
+                    <mat-option>Все</mat-option>
+                    <mat-option *ngFor="let program of programmeAll" [value]="program">
+                        {{program.value}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="filters__inputs_item">
+            <mat-form-field class="input_filter">
+                <mat-label>Период</mat-label>
+                <input matInput [matDatepicker]="dp">
+                <mat-datepicker-toggle matSuffix [for]="dp">
+                    <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+                </mat-datepicker-toggle>
+                <mat-datepicker #dp startView="year" panelClass="example-month-picker">
+                </mat-datepicker>
+            </mat-form-field>
+        </div>
+        <div class="filters__inputs_item">
+            <mat-form-field>
+                <mat-label>Статус</mat-label>
+                <mat-select [formControl]="statusControl">
+                    <mat-option>Все</mat-option>
+                    <mat-option *ngFor="let status of statusAll" [value]="status">
+                        {{status.value}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </form>
+</section>
