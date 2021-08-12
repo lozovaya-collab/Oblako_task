@@ -1,0 +1,21 @@
+@import '../../../app.component.scss';
+.tabs {
+    display: flex;
+    align-items: center;
+    &__item {
+        cursor: pointer;
+        display: flex;
+        box-sizing: border-box;
+        height: 36px;
+        margin-right: 24px;
+        padding: 10px 0;
+        @include body;
+    }
+    &__active-tab {
+        border-bottom: 2px solid $color-blue;
+        color: $color-lightTheme_Primary;
+    }
+    &__inactive-tab {
+        color: $color-lightTheme_Secondary;
+    }
+}

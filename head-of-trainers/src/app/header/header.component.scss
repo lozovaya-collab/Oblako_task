@@ -70,8 +70,7 @@
         }
     }
     &_section {
-        width: 86.5%;
-        margin: 0 auto;
+        @include wrapper;
         &__subtitle {
             @include body;
             color: $color-lightTheme_Secondary;
