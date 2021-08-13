@@ -28,6 +28,17 @@
                     color: $color-lightTheme_Primary;
                 }
             }
+            &__search {
+                &-icon {
+                    width: 18px !important;
+                    height: 18px !important;
+                    color: $color-lightTheme_Placeholder;
+                }
+                &-label.ng-tns-c30-0.ng-star-inserted {
+                    box-sizing: border-box;
+                    padding-left: 16px !important;
+                }
+            }
         }
     }
 }
