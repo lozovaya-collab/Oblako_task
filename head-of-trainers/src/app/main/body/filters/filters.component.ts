@@ -2,13 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import {MomentDateAdapter, MAT_MOMENT_DATE_ADAPTER_OPTIONS} from '@angular/material-moment-adapter';
 import {DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE, NativeDateAdapter} from '@angular/material/core';
 import {FormControl, Validators} from '@angular/forms';
-import {MatDatepicker} from '@angular/material/datepicker';
 
 
 
 import * as _moment from 'moment';
-import { Moment} from 'moment';
-const moment =  _moment;
 
 const monthsList = [
   'Январь',
@@ -80,12 +77,14 @@ export class FiltersComponent  {
   programControl = new FormControl('', Validators.required);
   selectFormControl = new FormControl('', Validators.required);
   statusAll: Status[] = [
+    {value: 'Все'},
     {value: 'Статус 1'},
     {value: 'Статус 2'},
     {value: 'Статус 3'},
   ];
 
   programmeAll: Status[] = [
+    {value: 'Все'},
     {value: 'Программа 1'},
     {value: 'Программа 2'},
     {value: 'Программа 3'},

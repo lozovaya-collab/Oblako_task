@@ -12,14 +12,14 @@
         justify-content: space-between;
         &_item {
             display: flex;
+            align-items: flex-end;
             & mat-form-field {
                 width: 166px;
                 height: 66px;
                 padding: 0;
                 & mat-label {
                     @include body;
-                    font-size: 10px;
-                    line-height: 12px;
+                    letter-spacing: 0.5px;
                     color: $color-lightTheme_Secondary;
                 }
                 & input,

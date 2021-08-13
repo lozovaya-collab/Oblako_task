@@ -2,16 +2,17 @@
     <form action="#" class="filters__inputs">
         <div class="filters__inputs_item">
             <mat-form-field class="input_filter example-full-width">
-                <mat-icon class="search-icon">search</mat-icon>
-                <input matInput placeholder="Поиск">
+                <mat-icon class="search-icon" matPrefix>search</mat-icon>
+                <mat-label class="search-label">Поиск</mat-label>
+                <input type="search" matInput>
             </mat-form-field>
 
         </div>
         <div class="filters__inputs_item">
             <mat-form-field>
                 <mat-label>Программа</mat-label>
+                <mat-icon class="arrow-icon" matSuffix>keyboard_arrow_down</mat-icon>
                 <mat-select [formControl]="programControl">
-                    <mat-option>Все</mat-option>
                     <mat-option *ngFor="let program of programmeAll" [value]="program">
                         {{program.value}}
                     </mat-option>
@@ -21,9 +22,9 @@
         <div class="filters__inputs_item">
             <mat-form-field class="input_filter">
                 <mat-label>Период</mat-label>
-                <input matInput [matDatepicker]="dp">
+                <input type="text" placeholder="Июнь 2019" matInput [matDatepicker]="dp">
                 <mat-datepicker-toggle matSuffix [for]="dp">
-                    <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+                    <mat-icon class="arrow-icon" matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
                 </mat-datepicker-toggle>
                 <mat-datepicker #dp startView="year" panelClass="example-month-picker">
                 </mat-datepicker>
@@ -32,8 +33,8 @@
         <div class="filters__inputs_item">
             <mat-form-field>
                 <mat-label>Статус</mat-label>
+                <mat-icon class="arrow-icon" matSuffix>keyboard_arrow_down</mat-icon>
                 <mat-select [formControl]="statusControl">
-                    <mat-option>Все</mat-option>
                     <mat-option *ngFor="let status of statusAll" [value]="status">
                         {{status.value}}
                     </mat-option>

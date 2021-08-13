@@ -2,11 +2,16 @@
 .tabs {
     display: flex;
     align-items: center;
+    height: 36px;
+    margin-bottom: 48px;
+    border-bottom: 1px solid $color_primary-LinesGray;
     &__item {
+        margin-bottom: 0px;
+        margin-top: 1px;
         cursor: pointer;
         display: flex;
         box-sizing: border-box;
-        height: 36px;
+        height: 100%;
         margin-right: 24px;
         padding: 10px 0;
         @include body;
