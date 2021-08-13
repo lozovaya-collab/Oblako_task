@@ -20,3 +20,39 @@
     width: 86.5%;
     margin: 0 auto;
 }
+
+@mixin buttonBlue {
+    @include body;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: $color-blue;
+    border-radius: 24px;
+    font-family: "Montserrat-SemiBold";
+    &:hover {
+        background-color: $color-lightBlue;
+    }
+    &:focus {
+        background-color: $color-lightDarkBlue;
+    }
+    &:active {
+        background-color: $color-lightTheDarkestBlue;
+    }
+}
+
+@mixin buttonGrey {
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    &:hover {
+        background-color: $color-lightGrey;
+    }
+    &:focus {
+        background-color: $color-lightDarkGrey;
+    }
+    &:active {
+        background-color: $color-lightTheDarkestGrey;
+    }
+}
