@@ -1,0 +1,49 @@
+@import '../list/slot/slot.component.scss';
+@import '../../../app.component.scss';
+.list {
+    width: 100%;
+    &_header {
+        @include body;
+        color: $color-lightTheme_Secondary;
+        font-size: 10px;
+        line-height: 12px;
+        display: flex;
+        align-items: center;
+        width: 1141px;
+        height: 44px;
+        &__item {
+            &.slot_date-and-time {
+                margin-right: 24px;
+            }
+            &.slot_name {
+                margin-right: 30px;
+            }
+            &.slot_number-of-participants {
+                margin-right: 32px;
+            }
+            &.slot_trainer {
+                margin-right: 32px;
+            }
+            &.slot_progress {
+                & button {
+                    @include buttonGrey;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    width: 15px;
+                    height: 15px;
+                    margin-left: 5px;
+                    & mat-icon {
+                        height: 12px;
+                        font-size: 13px !important;
+                    }
+                }
+                & span {
+                    color: $color-lightTheme_Primary;
+                    margin-left: 1px;
+                }
+            }
+        }
+    }
+}

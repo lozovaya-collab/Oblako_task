@@ -1,15 +1,15 @@
-<div class="slot">
+<div class="slot  {{ slot.status }}">
     <p class="slot_date-and-time">
-        23 дек, 9:00
+        {{ slot.date }}
     </p>
     <p class="slot_name">
-        Страхование с заботой о клиенте
+        {{ slot.name }}
     </p>
     <p class="slot_number-of-participants">
-        12
+        {{ slot.number }}
     </p>
     <p class="slot_trainer">
-
+        {{ slot.trainer }}
     </p>
     <div class="slot_progress">
         <i class="slot_progress__icon">
@@ -17,7 +17,7 @@
             <use xlink:href="../../assets/icons/sprite.svg#progress-icon"></use>
           </svg>
         </i>
-        <span>95 %</span>
+        <span>{{ slot.progress }}</span>
     </div>
     <app-menu></app-menu>
 </div>

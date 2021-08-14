@@ -3,43 +3,47 @@
     @include body;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    width: 1146px;
     height: 44px;
-    padding: 0 8px;
-    margin-left: -8px;
+    box-sizing: border-box;
     border-radius: 4px;
-    cursor: pointer;
-    &:hover {
-        background-color: $color-lightGrey;
+    &_active {
+        cursor: pointer;
+        &:hover {
+            background-color: $color-lightGrey;
+        }
+    }
+    &_inactive {
+        color: $color-lightTheme_Placeholder;
     }
     &_date-and-time {
         display: flex;
         align-items: center;
         width: 86px;
         height: 36px;
-        // margin-right: 24px;
+        margin-right: 24px;
     }
     &_name {
         display: flex;
         align-items: center;
         width: 546px;
         height: 36px;
-        // margin-right: 30px;
+        justify-content: flex-start;
+        margin-right: 30px;
     }
     &_number-of-participants {
         display: flex;
         align-items: center;
         width: 104px;
         height: 36px;
-        // margin-right: 32px;
+        margin-right: 32px;
     }
     &_trainer {
         display: flex;
         align-items: center;
         width: 100px;
         height: 36px;
-        // margin-right: 32px;
+        margin-right: 32px;
     }
     &_progress {
         display: flex;

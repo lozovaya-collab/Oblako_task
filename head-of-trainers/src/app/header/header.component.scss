@@ -15,7 +15,7 @@
             @include buttonGrey;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             width: 40px;
             height: 40px;
             border-radius: 50%;
@@ -29,11 +29,11 @@
             @include buttonBlue;
             width: 161px;
             height: 40px;
-            padding: 11px 20px 11px 16px;
+            padding: 11px 20px 11px 3px;
             box-sizing: border-box;
             display: flex;
             align-items: center;
-            justify-content: flex-end;
+            justify-content: flex-start;
             &_add-icon {
                 display: flex;
                 align-items: center;

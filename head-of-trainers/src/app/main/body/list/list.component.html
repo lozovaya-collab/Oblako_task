@@ -1,1 +1,24 @@
-<app-slot></app-slot>
+<section class="list">
+    <div class="list_header">
+        <p class="list_header__item slot_date-and-time">
+            Дата начала
+        </p>
+        <p class="list_header__item slot_name">
+            Название
+        </p>
+        <p class="list_header__item slot_number-of-participants">
+            Участников
+        </p>
+        <p class="list_header__item slot_trainer">
+            Тренер
+        </p>
+        <div class="list_header__item slot_progress">
+            <span>Прогресс</span>
+            <button>
+              <mat-icon>keyboard_arrow_up</mat-icon>
+            </button>
+        </div>
+    </div>
+    <app-slot *ngFor="let course of coursesAll" [slot]="course">
+    </app-slot>
+</section>

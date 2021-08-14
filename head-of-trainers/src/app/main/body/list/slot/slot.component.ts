@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Course } from '../list.component';
+
 
 @Component({
   selector: 'app-slot',
@@ -7,7 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SlotComponent implements OnInit {
 
-  constructor() { }
+  @Input() slot: Course = {
+    date:  "23 дек, 9:00",
+    name:  "Страхование с заботой о клиенте",
+    number:  12,
+    trainer:  "",
+    progress:  "95 %",
+    status: "slot_active"
+  }
+
+
 
   ngOnInit(): void {
   }
