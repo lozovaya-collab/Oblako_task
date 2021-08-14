@@ -1,1 +1,17 @@
-<p>menu works!</p>
+<button class="slotButton-menu" [matMenuTriggerFor]="menu">
+  <i  class="slotButton-menu__icon">
+    <svg>
+      <use xlink:href="../../assets/icons/sprite.svg#menu-icon"></use>
+    </svg>
+  </i>
+</button>
+<mat-menu class="slotButton-menu__list" yPosition="above" xPosition="before" #menu="matMenu">
+    <button class="slotButton-menu__list_item" mat-menu-item>
+      <mat-icon>edit</mat-icon>
+      <span>Редактировать</span>
+    </button>
+    <button class="slotButton-menu__list_item" mat-menu-item>
+      <mat-icon>delete_outline</mat-icon>
+      <span>Удалить слот</span>
+    </button>
+</mat-menu>

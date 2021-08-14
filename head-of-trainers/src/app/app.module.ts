@@ -7,6 +7,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -20,6 +21,7 @@ import { FiltersComponent } from './main/body/filters/filters.component';
 import { ListComponent } from './main/body/list/list.component';
 import { MenuComponent } from './main/body/menu/menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SlotComponent } from './main/body/list/slot/slot.component';
 
 const modules = [
   MatFormFieldModule,
@@ -27,7 +29,8 @@ const modules = [
   MatDatepickerModule,
   MatIconModule,
   MatSelectModule,
-  MatButtonModule
+  MatButtonModule,
+  MatMenuModule
 
 ];
 @NgModule({
@@ -39,7 +42,8 @@ const modules = [
     TabsComponent,
     FiltersComponent,
     ListComponent,
-    MenuComponent
+    MenuComponent,
+    SlotComponent
   ],
   imports: [
     BrowserModule,
